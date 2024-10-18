@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+
+        <!-- Container -->
+
+        <div class="nav-div">
+            <h1>Port<span>Folio</span></h1>
+            <div class="nav-elements">
+                <ul>
+                    <li><a class="clicked" href="#home">Home</a></li>
+                    <li><a href="#AboutMe">About Me</a></li>
+                    <li><a href="#Skills">Skills</a></li>
+                    <li><a href="#Portfolio">Portfolio</a></li>
+                    <li><a href="#ContactMe">Contact Me</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Home -->
+
+        <div id="home" class="home">
+            <div class="left-home">
+                <div class="home-description">
+                    <h1>Hi</h1>
+                    <h1>I'm Iheb</h1>
+                    <h1>A Junior </h1>
+                    <h1>Full Stack</h1>
+                    <h1>Web Developper</h1>
+                </div>
+                <button onclick="CVDownloaded()"><a href="./Photos/CV2.jpg" download>
+                Download CV</a></button>
+            </div>
+            <img src="./Photos/cv.png" width="600px" alt="">
+        </div>
+
+        <!-- About Me -->
+
+        <div id="AboutMe" class="AboutMe">
+            <div class="box">
+                <h1>About Me</h1>
+                <div class="content">
+                    <p>My name is Cherni Iheb, and I am a 21-year-old with a strong passion web development, music, and football. I thrive in competitive environments, whether on the football field or in the tech industry.  My love for football not only fuels my determination but also teaches me valuable lessons in teamwork and discipline.
+
+                        In addition to my athletic pursuits, I am dedicated to advancing my skills in web development. I am always eager to learn new technologies and create innovative online experiences that engage and inspire users. Music plays a significant role in my life, serving as a source of creativity and motivation in my projects. I am excited to continue growing both personally and professionally in these fields.
+                        
+                    </p>
+                    <!-- Slideshow container -->
+                    <div class="slideshow-container">
+                        <div class="upSliderContainer" style="display: flex ; align-items: center;">
+                            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                            <!-- Full-width images with number and caption text -->
+                            <div class="mySlides fade">
+                                <img src="./Photos/web-development.jpg" >
+                            </div>
+                            <div class="mySlides fade">
+                                <img src="./Photos/messi.png" >
+                            </div>
+                            <div class="mySlides fade">
+                                <img src="./Photos/trap.jpg">
+                            </div>
+                            <!-- Next and previous buttons -->
+                            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                        </div>
+                        <!-- The dots/circles -->
+                        <div class="dots" style="text-align:center">
+                            <span class="dot" onclick="currentSlide(1)"></span>
+                            <span class="dot" onclick="currentSlide(2)"></span>
+                            <span class="dot" onclick="currentSlide(3)"></span>
+                        </div>
+                    </div>
+                    <br>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Skills -->
+
+        <div id="Skills" class="Underme">
+            <div class="skills">
+                <h1>Skills</h1>
+            </div>
+            <div class="boxes">
+                <div class="box1">
+                    <h2>Hard Skills</h2>
+                    <div id="slidebox" class="row">
+                        <div class="htmlcss">
+                            <div class="leftside">
+                                <H6>HTML/CSS</H6>
+                                <img src="./Photos/Html.png" alt="Html">
+                                <img src="./Photos/CSS.png" alt="CSS">
+                            </div>
+                            <div class="rightside">
+                                <h6>90%</h6>
+                            </div>
+                        </div>
+                        <div class="porcent">
+                            <div class="slide" style="float: left;"></div>
+                        </div>
+                        <div class="htmlcss">
+                            <div class="leftside">
+                                <H6>JAVASCRIPT</H6>
+                                <img src="./Photos/js2.png" alt="JS">
+                            </div>
+                            <div class="rightside">
+                                <h6>75%</h6>
+                            </div>
+                        </div>
+                        
+                        <div class="porcent">
+                            <div class="slide2" style="float: left;"></div>
+                        </div>
+                        <div class="htmlcss">
+                            <div class="leftside">
+                                <H6>C#</H6>
+                                <img src="./Photos/C.png" alt="c#">
+                            </div>
+                            <div class="rightside">
+                                <h6>75%</h6>
+                            </div>
+                        </div>
+                        <div class="porcent">
+                            <div class="slide2"></div>
+                        </div>
+                        <div class="htmlcss">
+                            <div class="leftside">
+                                <H6>REACT</H6>
+                                <img class="radius" src="./Photos/React.png" alt="React">
+                            </div>
+                            <div class="rightside">
+                                <h6>75%</h6>
+                            </div>
+                        </div>
+                        <div class="porcent">
+                            <div class="slide2"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="box2">
+                    <h2>Soft Skills</h2>
+                    <button onclick="showpic()" id="click-btn" class="clicked" >
+                        Click Me
+                    </button>
+                    <div class="ph">
+                        <img  class="first" src="./Photos/Firefly.png" alt="Men thinking"> 
+                    </div>
+                    <div class="ph2">
+                        <img src="./Photos/Bubble.png" alt="bubble">
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+        <!-- Portfolio -->
+
+        <div id="Portfolio" class="MyPortfolio">
+            <div class="PortfolioContent">
+                <h1>My Portfolio</h1>
+                <div class="SliderBox">
+                    <div class="slider-for">
+                        <div>
+                            <img src="./Photos/DojoWeather.JPG" alt="">
+                            <p>Dojo Weather</p>
+                            <button><a target="_blank" href="https://github.com/Papoutta/WebFundamentals/tree/main/Week_2/Day_2/Practice/Weather">Github Link</a></button>
+                        </div>
+                        <div>
+                            <img src="./Photos/MakingConnections.JPG" alt="">
+                            <p>Making Connections</p>
+                            <button><a target="_blank" href="https://github.com/Papoutta/WebFundamentals/tree/main/Week_2/Day_2/Practice/Making%20Connections">Github Link</a></button>
+                        </div>
+                        <div>
+                            <img src="./Photos/Exam.png" alt="">
+                            <p>Easy Bay</p>
+                            <button><a target="_blank" href="#">Github Link</a></button>
+                        </div>
+                        <div>
+                            <img src="./Photos/VideoPreview.JPG" alt="">
+                            <p>Video Preview</p>
+                            <button><a target="_blank" href="https://github.com/Papoutta/WebFundamentals/tree/main/Week_2/Day_1/Practice/Video%20Preview">Github Link</a></button>
+                        </div>
+                    </div>
+                    <div class="slider-nav">
+                        <div><img src="./Photos/DojoWeather.JPG" alt=""></div>
+                        <div><img src="./Photos/MakingConnections.JPG" alt=""></div>
+                        <div><img src="./Photos/Exam.png" alt=""></div>
+                        <div><img src="./Photos/VideoPreview.JPG" alt=""></div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+            
+
+                    
+        
+        <div id="ContactMe" class="lastone">
+            <div class="last">
+                <div class="contactme">
+                    <h1>Contact Me</h1>
+                </div>
+                <div class="pics">
+                    <a href="https://www.linkedin.com" target="_blank"><img src="./Photos/linkdin.png" alt="Linkdin"></a>
+                    <a href="https://github.com/iheb2022" target="_blank"><img src="./Photos/Github.png" alt="Github"></a>
+                    <a href="mailto:ihebhoppy@gmail.com" target="_blank"><img src="./Photos/Email.png" alt="Mail"></a>
+                </div>
+                <form class="contact-form" action="https://api.web3forms.com/submit" method="POST">
+
+                    <input type="hidden" name="access_key" value="309881ec-1d9f-443f-bff1-868d275e004e">
+                    <input placeholder="Name" type="text" name="name" required>
+                    <input placeholder="Email" type="email" name="email" required>
+                    <textarea placeholder="Your feedback" name="message" required></textarea>
+                    <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+                    <button type="submit">Submit Form</button>
+                
+                </form>
+            </div>
+        </div>
+    </div>
+
+<script src="script.js"></script>
+</body>
+</html>

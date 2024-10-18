@@ -1,0 +1,478 @@
+*{
+    margin: 0 auto;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.nav-div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #E9E9E9;
+    padding: 5px;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+}
+
+.nav-div h1{
+    font-size: 80px;
+}
+
+.nav-div span{
+    color: #C2AA4F;
+}
+
+.nav-elements ul{
+    display: flex;
+    list-style-type: none;
+    gap: 40px;
+    font-size: 20px;
+}
+
+/* Couleur quand l'élément est actif */
+.nav-elements ul li a.clicked {
+    color: #C2AA4F;
+}
+
+.nav-elements ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+.home {
+    height: 800px;
+    background-color: #D9D9D9;
+    display: flex;
+    align-items: center;
+    padding-top: 85px;
+}
+
+.home-description{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.home-description h1{
+    font-size: 60px;
+}
+
+.left-home{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 100px;
+}
+
+.left-home button{
+    width: 200px;
+    height: 75px;
+    background-color: black;
+    border: 2px solid #C2AA4F;
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(1,1,1,1);
+}
+
+.left-home button a{
+    color: #C2AA4F;
+    text-decoration: none;
+}
+
+.home img{
+    border-radius: 50%;
+    height: 75%;
+    box-shadow: 0 5px 15px rgba(0,0,0,1);
+
+}
+
+/* About Me */
+
+.AboutMe {
+    background-color: #FFF2D7;
+    padding: 150px 50px;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+}
+
+h1{
+    font-size: 70px;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+    animation: glow 3s infinite alternate;
+}
+
+/* Scale effect on hover */
+h1:hover {
+    transform: scale(1.1);
+}
+
+.content{
+    display: flex;
+    align-items: center;
+}
+
+.content p {
+    width: 50%;
+    font-size: 20px;
+}
+
+/* Hide the images by default */
+.mySlides {
+display: none;
+}
+
+.mySlides img{
+    border-radius: 25px;
+    height: 400px;
+    width: 600px;
+
+}
+
+/* Next & previous buttons */
+.prev, .next {
+cursor: pointer;
+top: 50%;
+width: auto;
+margin-top: -22px;
+padding: 16px;
+color: white;
+font-weight: bold;
+font-size: 18px;
+transition: 0.6s ease;
+border-radius: 0 3px 3px 0;
+user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+right: 0;
+border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+background-color: rgba(0,0,0,0.8);
+}
+
+.dots{
+    margin-top: 30px;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+cursor: pointer;
+height: 15px;
+width: 15px;
+margin: 0 2px;
+background-color: #bbb;
+border-radius: 50%;
+display: inline-block;
+transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+animation-name: fade;
+animation-duration: 1.5s;
+}
+
+@keyframes fade {
+from {opacity: .4}
+to {opacity: 1}
+}
+
+
+/* Skills */
+.Underme{
+    background-color:#FFE0B5;
+    height: 630px;
+    padding-bottom: 50px;
+}
+.skills{
+    display: flex;
+    align-items: center;
+    padding: 90px 0px 30px;
+}
+.skills h1{
+    text-transform: uppercase;
+}
+.boxes{
+    display: flex;
+}
+.box1{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    gap: 30px;
+}
+.row{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    gap: 10px;
+    opacity: 0;
+    transform: translateX(-200%);
+    transition: transform 1s ease, opacity 1s ease;
+}
+.row.visible{
+    opacity: 1;
+    transform: translateX(0);
+}
+
+
+.htmlcss{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.row img{
+    width: 50px;
+}
+.leftside{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-left: 15%;
+}
+.rightside{
+    display:flex ;
+    align-items: center;
+    margin-right: 15%;
+}
+.box2{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+.radius{
+    border-radius: 50%;
+}
+
+.box2{
+    display: flex;
+    gap: 10px;
+}
+.porcent{
+    background-color: rgb(158, 195, 227);
+    width: 70%;
+    height: 10px;
+    border-radius: 30px;
+}
+
+.slide{
+    background-color: #a77020;
+    width: 90%;
+    margin-left: 1px;
+    height: 10px;
+    border-radius: 30px ;
+    animation: moveright2 2s ease-in-out alternate;
+    animation-timeline: view();
+    animation-range-start: entry;
+    animation-range-end: 200px;
+    opacity: 1;
+}
+.slide2{
+    background-color:#a77020;
+    width: 75%;
+    margin-left: 1px;
+    height: 10px;
+    border-radius: 30px ;
+    animation: moveright 2s ease-in-out alternate;
+    animation-timeline: view();
+    animation-range-start: entry;
+    animation-range-end: 200px;
+    opacity: 1;
+}
+
+@keyframes moveright{
+    0%{
+        width: 0;
+        opacity: 1;
+    }
+    75%{
+        opacity : 1;
+    }
+}
+@keyframes moveright2{
+    0%{
+        width: 0;
+        opacity: 1;
+    }
+    90%{
+        opacity : 1;
+    }
+}
+
+.ph img{
+    width: 370px;
+    border-radius: 50%;
+    box-shadow: 3px 3px 3px #777373;
+}
+
+.ph2{
+    visibility: hidden;
+    transition: opacity 1s ease; 
+    opacity: 0;
+}
+.ph2.show{
+    opacity: 1;
+    visibility: visible;
+}
+
+.ph2 img{
+    width:350px;
+    position: relative;
+    bottom: 530px;
+    left: 220px;
+}
+.box2 button{
+    background-color: #777373;
+    width: 80px;
+    border-radius: 40px;
+    cursor: pointer;
+    color: beige;
+}
+    
+.box2 button:hover {
+    transform: scale(1.1);
+}
+/* end skills */
+
+
+/* Portofolio */
+
+.MyPortfolio {
+    background-color: #F8C794 ;
+    padding: 200px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.PortfolioContent{
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    width: 1000px;
+}
+
+.SliderBox {
+    width:1000px;
+    display: flex;
+}
+
+.slider-for div{
+border: 2px solid black;
+height: 600px;
+width: 800px;
+}
+
+.slider-for div img {
+    width: 100%;
+    height: 100%;
+}
+
+.slider-for div p {
+    font-size: 30px;
+    padding: 20px 0;
+}
+
+.slider-nav{
+display : flex;
+flex-direction: column;
+justify-content: space-between;
+}
+
+.slider-nav div{
+width: 100px;
+height: 100px;
+border: 1px solid black;
+margin: 0;
+cursor: pointer;
+}
+
+.slider-nav div:hover{
+    border: 2px solid black;
+}
+
+.slider-nav div img {
+    width: 100%;
+    height: 100%;
+}
+
+/* contact me */
+
+.lastone{
+    background-color: #D8AE7E;
+}
+.last{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+    padding: 100px 0;
+}
+
+.pics {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    animation: glow 3s infinite alternate;
+    }
+    
+.pics a:hover {
+    transform: scale(1.1);
+}
+
+.pics img{
+    width: 80px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; 
+    width: 300px; 
+}
+
+.contact-form input, 
+.contact-form textarea {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.contact-form button, .slider-for div button {
+    padding: 10px;
+    background-color: #5a5a5a;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.slider-for div button a{
+    color: white;
+    text-decoration: none;
+}
+
+.contact-form button:hover , .slider-for div button:hover {
+    background-color: #888; 
+}
+
+/* end contact me */
